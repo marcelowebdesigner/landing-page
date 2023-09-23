@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Personalizada</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-info text-white text-center py-5">
+    <h1>Bienvenido a nuestra Landing Page</h1>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formulario">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Body con Responsividad utilizando Bootstrap Grid -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
+            <h2>Punto 1</h2>
+            <p>Descripción genérica del punto 1.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
+            <h2>Punto 2</h2>
+            <p>Descripción genérica del punto 2.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
+            <h2>Punto 3</h2>
+            <p>Descripción genérica del punto 3.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
+            <h2>Punto 4</h2>
+            <p>Descripción genérica del punto 4.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Formulario de Contacto con Responsividad utilizando Bootstrap Grid -->
+<div class="container">
+    <h2>Contacto</h2>
+    <form id="formulario">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info">Enviar</button>
+    </form>
+</div>
+
+<!-- Footer con Responsividad utilizando Bootstrap Grid -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>Desarrollado por Macdev &copy; 2023</p>
+</footer>
+
+<!-- Referencia a Bootstrap JS (jQuery y Popper.js son requeridos por Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!--Comentario sobre clases responsivas-->
+<!--
+    col-lg-*: En pantallas grandes (large), como computadoras de escritorio, Bootstrap divide las 12 columnas en 12 partes iguales. Por lo tanto, col-lg-4 significa que el elemento ocupará 4 de las 12 columnas disponibles.
+
+    col-md-*: En pantallas medianas (medium), Bootstrap también divide las 12 columnas en 12 partes iguales. Por lo tanto, col-md-6 significa que el elemento ocupará 6 de las 12 columnas disponibles.
+
+    col-sm-*: En pantallas pequeñas (small), igualmente, Bootstrap divide las 12 columnas en 12 partes iguales. Entonces, col-sm-12 significa que el elemento ocupará todas las 12 columnas disponibles, lo que lo hará ocupar todo el ancho de la pantalla.
+
+    col-xl-*: Para pantallas extra grandes (extra large), nuevamente, Bootstrap divide las 12 columnas en 12 partes iguales. Entonces, col-xl-3 significa que el elemento ocupará 3 de las 12 columnas disponibles.
+-->
