@@ -6,6 +6,21 @@
     <title>Landing Page Personalizada</title>
     <!-- Agrega la referencia a Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para las cards */
+        .custom-card {
+            background-color: #f8f9fa; /* Color de fondo similar a otros elementos */
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .custom-card:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+    </style>
 </head>
 <body>
 
@@ -37,24 +52,26 @@
     </div>
 </nav>
 
-<!-- Body con Responsividad utilizando Bootstrap Grid -->
+<!-- Cards horizontales -->
 <div class="container my-5">
     <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
-            <h2>Punto 1</h2>
-            <p>Descripción genérica del punto 1.</p>
+        <div class="col-lg-4">
+            <div class="custom-card">
+                <h2>Título 1</h2>
+                <p>Descripción genérica del punto 1.</p>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
-            <h2>Punto 2</h2>
-            <p>Descripción genérica del punto 2.</p>
+        <div class="col-lg-4">
+            <div class="custom-card">
+                <h2>Título 2</h2>
+                <p>Descripción genérica del punto 2.</p>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
-            <h2>Punto 3</h2>
-            <p>Descripción genérica del punto 3.</p>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xl-3">
-            <h2>Punto 4</h2>
-            <p>Descripción genérica del punto 4.</p>
+        <div class="col-lg-4">
+            <div class="custom-card">
+                <h2>Título 3</h2>
+                <p>Descripción genérica del punto 3.</p>
+            </div>
         </div>
     </div>
 </div>
